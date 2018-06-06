@@ -1,6 +1,6 @@
 var menu = document.getElementById('menu');
 
-var apiUrl = 'http://entree-s18.herokuapp.com/v1/menu';
+var apiUrl = 'https://entree-s18.herokuapp.com/v1/menu';
 var apiRequest;
 var response;
 
