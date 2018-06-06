@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Cabin");
 .container {
-  background-color: #F1F1D4; }
+  background: url("../images/SuperFancyRestaurant.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 body {
   bottom: 300px; }
@@ -12,35 +15,41 @@ body {
   top: 0;
   width: 100%;
   height: 10%;
-  min-width: 400px;
+  min-width: 600px;
   color: #F1F1D4;
   background-color: #722f37;
   text-align: center; }
+
+#menuHeader {
+  font-family: 'Cabin', sans-serif; }
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  min-width: 400px;
+  min-width: 600px;
   background-color: #722f37;
-  font-size: 1em; }
+  font-size: 1em;
+  font-family: 'Cabin', sans-serif; }
+
+.aboutSection {
+  font-family: 'Cabin', sans-serif; }
 
 #menuItem {
-  font-size: 200%;
+  font-size: 180%;
   font-family: 'Lobster', cursive;
-  display: none; }
+  display: none;
+  min-width: 18rem; }
 
 #menu {
   font-family: 'Lobster', cursive; }
 
 #menuItemImg {
-  width: 90%; }
+  width: 100%; }
 
 .card {
-  margin: auto;
-  max-width: 50%;
-  background: #aaa; }
+  max-width: 45%; }
 
 #map {
   height: 400px;
@@ -4367,7 +4376,7 @@ button.bg-dark:focus {
 .bg-transparent {
   background-color: transparent !important; }
 
-.border {
+.border, #menuItemImg {
   border: 1px solid #dee2e6 !important; }
 
 .border-top {
@@ -4418,13 +4427,13 @@ button.bg-dark:focus {
 .border-light {
   border-color: #f8f9fa !important; }
 
-.border-dark {
+.border-dark, #menuItemImg {
   border-color: #343a40 !important; }
 
 .border-white {
   border-color: #fff !important; }
 
-.rounded {
+.rounded, #menuItemImg {
   border-radius: 0.25rem !important; }
 
 .rounded-top {
@@ -6237,10 +6246,10 @@ a.text-warning:hover, a.text-warning:focus {
 a.text-danger:hover, a.text-danger:focus {
   color: #bd2130 !important; }
 
-.text-light {
+.text-light, #menuHeader {
   color: #f8f9fa !important; }
 
-a.text-light:hover, a.text-light:focus {
+a.text-light:hover, a#menuHeader:hover, a.text-light:focus, a#menuHeader:focus {
   color: #dae0e5 !important; }
 
 .text-dark {

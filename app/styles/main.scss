@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Cabin');
 
 $wine: #722f37;
 $parchment: #F1F1D4;
 
 .container {
-	background-color: $parchment;
+	//background-color: $parchment;
+	background: url("../images/SuperFancyRestaurant.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 body {
@@ -18,11 +22,15 @@ body {
     top: 0;
     width: 100%;
     height: 10%;
-    min-width: 400px;
+    min-width: 600px;
     color: $parchment;
     background-color: $wine;
     text-align: center;
-    //z-index:100;
+}
+
+#menuHeader {
+	@extend .text-light;
+	font-family: 'Cabin', sans-serif;
 }
 
 .footer {
@@ -30,12 +38,17 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    min-width: 400px;
+    min-width: 600px;
     @extend .text-white-50;
     background-color: $wine;
     font-size: 1em;
     @extend .mt-5;
     @extend .text-left;
+    font-family: 'Cabin', sans-serif;
+}
+
+.aboutSection {
+	font-family: 'Cabin', sans-serif;
 }
 
 #menuItem {
@@ -43,9 +56,10 @@ body {
 	@extend .shadow;
 	@extend .text-center;
 
-	font-size: 200%;
+	font-size: 180%;
 	font-family: 'Lobster', cursive;
 	display: none;
+	min-width: 18rem;
 }
 
 #menu {
@@ -53,15 +67,20 @@ body {
 }
 
 #menuItemImg {
-	width: 90%;
+	@extend .border;
+	@extend .border-dark;
+	@extend .rounded;
+	width: 100%;
 	// @extend .m-auto;
 }
 
 .card {
-	margin: auto;
-	max-width: 50%;
-	background: #aaa;
+	//margin: auto;
+	max-width: 45%;
+	//background: #aaa;
 }
+//#fbeee4
+
 
 #map {
         height: 400px;  /* The height is 400 pixels */
