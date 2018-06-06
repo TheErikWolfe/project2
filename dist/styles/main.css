@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Cabin");
 .container {
   background: url("../images/SuperFancyRestaurant.jpg");
-  background-size: auto;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
