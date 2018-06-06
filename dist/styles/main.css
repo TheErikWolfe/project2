@@ -4382,13 +4382,13 @@ button.bg-dark:focus {
 .border, #menuItemImg {
   border: 1px solid #dee2e6 !important; }
 
-.border-top {
+.border-top, .footer {
   border-top: 1px solid #dee2e6 !important; }
 
 .border-right {
   border-right: 1px solid #dee2e6 !important; }
 
-.border-bottom {
+.border-bottom, #header {
   border-bottom: 1px solid #dee2e6 !important; }
 
 .border-left {
@@ -4427,7 +4427,7 @@ button.bg-dark:focus {
 .border-danger {
   border-color: #dc3545 !important; }
 
-.border-light {
+.border-light, #header, .footer {
   border-color: #f8f9fa !important; }
 
 .border-dark, #menuItemImg {

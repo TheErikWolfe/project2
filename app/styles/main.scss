@@ -26,6 +26,8 @@ body {
     color: $parchment;
     background-color: $wine;
     text-align: center;
+    @extend .border-bottom;
+    @extend .border-light;
 }
 
 #menuHeader {
@@ -45,6 +47,8 @@ body {
     @extend .mt-5;
     @extend .text-left;
     font-family: 'Cabin', sans-serif;
+    @extend .border-top;
+    @extend .border-light;
 }
 
 .aboutSection {
