@@ -9,8 +9,8 @@ document.onreadystatechange = function()
 	if(document.readyState == 'interactive')
 	{
 		
-		getMenuItems();
-		//loadMenuItems();
+		//getMenuItems();
+		loadMenuItems();
 		//saveMenuItems();
 	}
 };
@@ -40,7 +40,7 @@ function catchResponse() {
 			{
 				displayMenuItems(response.menu_items[i].description);
 			}
-		//saveMenuItems();
+		saveMenuItems();
 	}
 }
 
@@ -125,15 +125,13 @@ function displayMenuItems(item)
 
 	node.style.display = 'block';
 	menu.appendChild(node);
-	
-	
 }
-
+var list;
 function saveMenuItems() {
-	var list = JSON.parse(localStorage.getItem('menu'));
-	if (list == null) {
-		list = response;
-	}
+	/*list = JSON.parse(localStorage.getItem('menu'));
+	if (list == null) {*/
+	list = apiRequest.responseText;
+	/*}*/
 
 	localStorage.setItem('menu', JSON.stringify(list));
 	loadMenuItems();
@@ -146,22 +144,22 @@ function loadMenuItems()
 	var list = JSON.parse(localStorage.getItem('menu'));
 	if (list == null) 
 	{
-		saveMenuItems();
+		getMenuItems();
 	}
 
-	
-	menuItemTitle.innerHtml = '';
-
-	for (var key in list) {
-		if (list.hasOwnProperty(key)) {
-			var node = menuItem.cloneNode(true);
-			//var textnode = document.createTextNode(key + ' - ' + list[key]);
-			node.appendChild(textnode);
-			menu.appendChild(node);
-			for(var i = 0; i < list.menu_size; i++)
-			{
-				displayMenuItems(list.menu_items[i].description);
-			}
+	else
+	{
+		menuItemTitle.innerHtml = '';
+		list = JSON.parse(list);
+	/*	for (var key in list) {
+			if (list.hasOwnProperty(key)) {
+				var node = menuItem.cloneNode(true);
+				//var textnode = document.createTextNode(key + ' - ' + list[key]);
+				node.appendChild(textnode);
+				menu.appendChild(node);*/
+		for(var i = 0; i < list.menu_size; i++)
+		{
+			displayMenuItems(list.menu_items[i].description);
 		}
 	}
 
