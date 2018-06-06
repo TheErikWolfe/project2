@@ -52,14 +52,20 @@ body {
 }
 
 #menuItem {
-	@extend .rounded-0;
-	@extend .shadow;
+	@extend .rounded;
+	@extend .shadow-lg;
 	@extend .text-center;
 
-	font-size: 180%;
+	font-size: 170%;
 	font-family: 'Lobster', cursive;
 	display: none;
 	min-width: 18rem;
+	max-width: 45%;
+}
+
+.card-bg-op {
+	background-color: $parchment !important;
+	opacity: 0.87;
 }
 
 #menu {
@@ -69,17 +75,16 @@ body {
 #menuItemImg {
 	@extend .border;
 	@extend .border-dark;
-	@extend .rounded;
+	@extend .rounded-circle;
 	width: 100%;
-	// @extend .m-auto;
+	height: 100%;
 }
 
 .card {
-	//margin: auto;
-	max-width: 45%;
-	//background: #aaa;
+	
 }
-//#fbeee4
+
+
 
 
 #map {

@@ -37,19 +37,22 @@ body {
   font-family: 'Cabin', sans-serif; }
 
 #menuItem {
-  font-size: 180%;
+  font-size: 170%;
   font-family: 'Lobster', cursive;
   display: none;
-  min-width: 18rem; }
+  min-width: 18rem;
+  max-width: 45%; }
+
+.card-bg-op {
+  background-color: #F1F1D4 !important;
+  opacity: 0.87; }
 
 #menu {
   font-family: 'Lobster', cursive; }
 
 #menuItemImg {
-  width: 100%; }
-
-.card {
-  max-width: 45%; }
+  width: 100%;
+  height: 100%; }
 
 #map {
   height: 400px;
@@ -4433,7 +4436,7 @@ button.bg-dark:focus {
 .border-white {
   border-color: #fff !important; }
 
-.rounded, #menuItemImg {
+.rounded, #menuItem {
   border-radius: 0.25rem !important; }
 
 .rounded-top {
@@ -4452,10 +4455,10 @@ button.bg-dark:focus {
   border-top-left-radius: 0.25rem !important;
   border-bottom-left-radius: 0.25rem !important; }
 
-.rounded-circle {
+.rounded-circle, #menuItemImg {
   border-radius: 50% !important; }
 
-.rounded-0, #menuItem {
+.rounded-0 {
   border-radius: 0 !important; }
 
 .clearfix::after {
@@ -5103,10 +5106,10 @@ button.bg-dark:focus {
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow, #menuItem {
+.shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
-.shadow-lg {
+.shadow-lg, #menuItem {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
 
 .shadow-none {
