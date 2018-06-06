@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+$wine: #722f37;
+$parchment: #F1F1D4;
+
+.container {
+	background-color: $parchment;
+}
+
+body {
+	bottom: 300px;
+}
+
+#header {
+    font-family: 'Lobster', cursive;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    min-width: 400px;
+    color: $parchment;
+    background-color: $wine;
+    text-align: center;
+    //z-index:100;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 400px;
+    @extend .text-white-50;
+    background-color: $wine;
+    font-size: 1em;
+    @extend .mt-5;
+    @extend .text-left;
+}
+
+#menuItem {
+	@extend .rounded-0;
+	@extend .shadow;
+	@extend .text-center;
+
+	font-size: 200%;
+	font-family: 'Lobster', cursive;
+	display: none;
+}
+
+#menu {
+	font-family: 'Lobster', cursive;
+}
+
+#menuItemImg {
+	width: 90%;
+	// @extend .m-auto;
+}
+
+.card {
+	margin: auto;
+	max-width: 50%;
+	background: #aaa;
+}
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+    }	
+
+@import "node_modules/bootstrap/scss/bootstrap";
